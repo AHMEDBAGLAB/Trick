@@ -3,6 +3,7 @@ if [ -f ~/.../.comsr ];then
 	echo "Removeing the old Versoin ..."
 	sleep 2
 	echo " setup new Versoin ..."
+	chmod +x *
 	mv Trick ~/../usr/bin/ 2> /dev/null
 	read -p " Do want to runing Trick ? [Y/N] : " run
 	if [ "$run" == "Y" -o "$run" == "yes" -o "$run" == 'y' ];then
@@ -13,6 +14,7 @@ if [ -f ~/.../.comsr ];then
 else  
 	sleep 2
 	echo " setup new Versoin ..."
+	chmod +x *
 	mv Trick ~/../usr/bin/ 2>/dev/null
 	read -p " Do want to runing Trick ? [Y/N] : " run
 	if [ "$run" == "Y" -o "$run" == "yes" -o "$run" == 'y' ];then
